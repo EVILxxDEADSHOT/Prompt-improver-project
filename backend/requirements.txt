@@ -1,0 +1,8 @@
+flask
+pandas
+torch
+joblib
+scikit-learn
+sentence-transformers
+google-generativeai
+flask-cors
