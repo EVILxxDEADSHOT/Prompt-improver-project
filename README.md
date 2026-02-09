@@ -1,17 +1,17 @@
 # ✨ Prompt Improver Using Gemini
 
-A smart **Chrome Extension + Flask backend** system that automatically **enhances user-written prompts** to make them clearer, more structured, and more effective for AI models.
+A smart **Chrome Extension + Flask backend** system that automatically **enhances user-written prompts** by leveraging a **curated prompt dataset, similarity-based matching, and the Gemini API**.
 
-Instead of manually rewriting prompts, users get **instant AI-powered prompt improvement** using the **Gemini API**.
+The system analyzes the user’s input, finds **semantically similar prompts from a dataset**, and uses them as context to generate a **clearer, more effective, and well-structured prompt**.
 
 ---
 
 ## 🚀 Key Highlights
 - ✍️ Automatic prompt enhancement  
+- 📚 Dataset-driven sentence framing  
+- 🔎 Similarity-based prompt retrieval  
+- 🤖 Gemini API–powered generation  
 - 🌐 Chrome Extension for seamless usage  
-- 🤖 Gemini API–powered improvement  
-- 🔁 One-click insert back into webpage  
-- ⚡ Flask-based backend processing  
 
 ---
 
@@ -19,28 +19,28 @@ Instead of manually rewriting prompts, users get **instant AI-powered prompt imp
 - Chrome Extension (HTML, CSS, JavaScript)  
 - Python (Flask)  
 - Gemini API  
-- ML-based prompt similarity processing  
+- ML-based prompt similarity (TF-IDF / embeddings)  
 
 ---
 
 ## 🔍 How It Works
-1. User enters a prompt in the extension  
-2. Prompt is sent to Flask backend  
-3. Backend processes it using ML + Gemini  
-4. Improved prompt is generated  
-5. Enhanced prompt is returned to extension  
-6. User inserts it back into the webpage  
+1. User enters a raw prompt in the extension  
+2. Prompt is sent to the Flask backend  
+3. Backend finds similar prompts from the dataset  
+4. Context is framed using retrieved examples  
+5. Gemini API generates an improved prompt  
+6. Enhanced prompt is returned and inserted  
 
 ---
 
 ## 📡 System Flow
-**User → Chrome Extension → Flask Backend (ML + Gemini) → Extension → User**
+**User → Extension → Backend (Dataset + ML + Gemini) → Extension → User**
 
 ---
 
 ## ⚠️ Disclaimer
-This project is intended **for educational and academic purposes only** and demonstrates prompt-engineering assistance.
+This project is intended **for educational and academic purposes only** and demonstrates automated prompt-engineering techniques.
 
 ---
 
-✨ *Smarter Prompts. Better AI Responses.*
+✨ *Better Context. Better Prompts. Better AI Responses.*
